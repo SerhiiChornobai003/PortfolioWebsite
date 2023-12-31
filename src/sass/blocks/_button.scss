@@ -1,0 +1,82 @@
+
+.btn { 
+    height: 45px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 12px 25px;
+}
+
+.buttons {     
+    display: flex;
+    justify-content: center;
+    .button {
+        color: white;
+        --color: #ffa501;
+        padding: 0.4em 1em;
+        margin-right: 15px;
+        background-color: transparent;
+        border-radius: 40px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: .5s;
+        font-weight: 700;
+        font-size: 16px;
+        border: 2px solid $main-color;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: var(white);
+        z-index: 1;
+        &:hover {
+        color: white;
+        text-decoration: none;
+        }
+       }
+       .black {
+        color: black;
+        margin-right: 0;
+       }
+       
+       
+       .button::before, .button::after {
+        color: white;
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 40px;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+       }
+       
+       .button::before {
+        top: -1em;
+        left: -1em;
+       }
+       
+       .button::after {
+        left: calc(100% + 1em);
+        top: calc(100% + 1em);
+       }
+       
+       .button:hover::before, .button:hover::after {
+        height: 410px;
+        width: 410px;
+       }
+       
+       .button:hover {
+        color: white;
+        border: 2px solid white;
+       }
+       .black:hover {
+        color: black;
+        border: 2px solid white;
+       }
+       .button:active {
+        filter: brightness(.8);
+       }
+    }
+    

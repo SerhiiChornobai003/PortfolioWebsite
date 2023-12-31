@@ -1,0 +1,312 @@
+@media (max-width: 1439px) {
+    .container { 
+        max-width: 1050px;
+    }
+    .sidepanel, .sidepanel_black {
+        display: none;
+    }
+    .skills {
+        .grid-container { 
+            grid-template-columns: repeat(auto-fit, 270px);
+            grid-row: 1fr;
+            justify-content: space-between;
+        }
+}
+}
+@media (max-width: 1200px) { 
+    .container { 
+        max-width: 950px;
+        .buttons { 
+            .button { 
+                font-size: 14px;    
+            }
+        }
+        .about {
+            &__wrapper { 
+                padding-left: 0;
+            }
+        }
+        .experience { 
+            &__wrapper { 
+
+                grid-template-columns: repeat(2, 360px);
+            }
+        }
+    }
+    .portfolio { 
+        &__wrapper { 
+           grid-template-columns: repeat(auto-fit, 270px);
+           grid-auto-rows: 270px; 
+           justify-content: center;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
+}
+
+@media (max-width: 992px) { 
+    .container { 
+        max-width: 720px;
+        .buttons {
+            
+            .button { 
+                font-size: 12px;
+                &__portfolio { 
+                    font-size: 14px;
+                }     
+            }
+        }
+        
+        .about {
+            &__subtitle { 
+                margin-top: 25px;
+            }
+            &__text {
+                width: 630px;
+            } 
+            &__skills {
+                display: grid;
+                grid-template: repeat(2, minmax(115px, auto)) / repeat(3, 220px);
+                grid-auto-rows: 1fr;
+                column-gap: 20px;
+                row-gap: 20px;
+                &-item {
+                    display: grid;
+                    grid-template-columns: 30px 160px;
+                    column-gap: 20px;
+                    
+                }
+                &-circle {
+                    position: relative;
+                    padding: 15px 0 0 15px;
+                    @include before_circle;
+                    &:before {
+                        top: 0;
+                    }
+                }
+                &-text {
+                    margin-top: 6px;
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+            &__wrapper {
+    
+                grid-template-rows: minmax(245px, auto) minmax(230px, auto);
+                
+            }
+        }
+        .experience { 
+            &__wrapper {
+                padding: 60px 30px 0 30px; 
+                grid-template-columns: repeat(2, 270px);
+            }
+        }
+    }
+    .price { 
+        &__wrapper { 
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 0;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .hamburger  { 
+        display: flex;
+    }   
+    .menu { 
+        display: flex;
+    } 
+    .container { 
+        max-width: 575px;
+        padding: 0 10px 0 10px;
+        .top { 
+            display: none;
+        }
+        .about {
+            &__subtitle { 
+                margin-top: 25px;
+            }
+            &__text {
+                width: 550px;
+            } 
+            &__skills {
+                display: grid;
+                grid-template: repeat(2, minmax(115px, auto)) / repeat(5, 95px);
+                grid-auto-rows: 1fr;
+                column-gap: 20px;
+                row-gap: 20px;
+                &-item {
+                    display: grid;
+                    grid-template-columns: 30px 150px;
+                    column-gap: 20px;
+                    &:nth-child(1) { 
+                        grid-column: 1/3;
+                        justify-self: center;
+                    }
+                    &:nth-child(2) { 
+                        grid-column: 4/6;
+                        justify-self: center;
+                    }
+                    &:nth-child(3) { 
+                        grid-column: 2/5;
+                        justify-self: center;
+                    }
+                    
+                }
+            }
+            &__wrapper {
+                width: 550px;
+                grid-template-rows: minmax(245px, auto) minmax(230px, auto);
+                
+            }
+        }
+        .experience { 
+            padding-top: 40px;
+            &__wrapper {
+                grid-template-columns: 1fr;
+                column-gap: 60px;
+                row-gap: 40px;
+            }
+        }   
+    }
+    .price { 
+        &__wrapper { 
+            grid-template-columns: repeat(auto-fit, 300px);
+            padding: 0;
+            justify-content: center;
+        }
+    }
+    .feedback {
+        &__wrapper {
+            padding: 0 52px 0 52px;
+            display: grid;
+            grid-template-columns: 570px;
+            justify-content: center;
+        }
+        &__form {
+            padding: 10px;  
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        .button {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 300px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+    }
+}
+@media (max-width: 576px) { 
+    .container { 
+        width: 100%;
+        padding: 0 10px;
+        .promo { 
+            &__title { 
+                font-size: 26px;
+                width: 300px;
+            }
+            .buttons { 
+                justify-content: center;
+            }
+        }
+        .about {
+            &__wrapper { 
+                width: 300px;
+            }
+            &__subtitle { 
+                margin-top: 25px;
+                width: 300px;
+            }
+            &__text {
+                width: 300px;
+            }
+            &__descr { 
+                width: 300px;
+            } 
+            &__skills {
+                display: grid;
+                grid-template: repeat(2, minmax(115px, auto)) / repeat(3, 85px);
+                grid-auto-rows: 1fr;
+                column-gap: 20px;
+                row-gap: 20px;
+                &-item {
+                    display: grid;
+                    grid-template-columns: 30px 116px;
+                    column-gap: 20px;
+                    &:nth-child(1) { 
+                        grid-column: 1/3;
+                        justify-self: center;
+                    }
+                    &:nth-child(2) { 
+                        grid-column: 1/3;
+                        justify-self: center;
+                    }
+                    &:nth-child(3) { 
+                        grid-column: 1/3;
+                        justify-self: center;
+                    }
+                }
+                
+            }
+            
+            
+        }
+    }
+    .skills {
+        &__subtitle { 
+            font-size: 28px;
+        } 
+        .grid-container { 
+            justify-content: center;
+        }
+    } 
+    .experience {
+        padding-top: 100px; 
+        &__wrapper {
+            padding: 120px 5px 0 5px;
+        }
+    }
+    .price { 
+        &__wrapper { 
+            grid-template-columns: repeat(auto-fit, 280px);
+            padding: 0;
+            justify-content: center;
+        }
+        &__type { 
+            font-size: 13px;
+        }
+    }
+    .feedback { 
+        &__wrapper {
+            padding: 0 52px 0 52px;
+            display: grid;
+            grid-template-columns: minmax(320px, 570px);
+            justify-content: center;
+        }
+        &__descr { 
+            font-size: 14px;
+        }
+    }   
+}

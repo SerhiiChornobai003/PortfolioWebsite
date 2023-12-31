@@ -1,0 +1,99 @@
+.feedback { 
+    padding-top: 170px;
+    padding-bottom: 60px;
+    &__title { 
+        position: relative;
+        text-align: center;
+    }
+    &__subtitle, &__lowerSubtitle { 
+        text-align: center;
+    }
+    &__lowerSubtitle { 
+        margin-top: 20px;
+    }
+    &__wrapper {
+        padding: 0 52px 0 52px;
+        display: grid;
+        grid-template-columns: 565px;
+        justify-content: center;
+    }
+    &__descr {
+        padding-top: 6px;
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+    &__text, &__social {
+        margin-top: 20px;     
+    }
+    &__social { 
+        display: flex;
+        justify-content: center;
+    }
+    &__link {
+        margin-right: 25px;
+        img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 270px);
+        justify-content: space-between;
+        row-gap: 27px;
+        label {
+            display: block;
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__triggers { 
+        display: grid;
+        grid-column: 1/3;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(2, auto);
+    }
+    &__policy { 
+        font-size: 12px;
+        line-height: 14px;
+        input { 
+            margin-right: 10px;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            font-size: 12px;
+        }
+    }
+    
+}
