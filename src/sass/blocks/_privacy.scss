@@ -1,0 +1,14 @@
+.policy {
+    &__ua { 
+        background-color: wheat;
+    }
+    &__en { 
+        background-color: rgb(201, 182, 149);
+    }
+}
+.languages { 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 36px;
+}

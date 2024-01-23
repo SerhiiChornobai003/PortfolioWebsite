@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web-розробник Чорнобай Сергій</title>
+    <title>Web-developer Chornobai Serhii</title>
     <meta name="title" content="Моє портфоліо">
-    <meta name="description" content="Тут ви зможете ознайомитися з моїми роботами та дізнатися більше про мене">
+    <meta name="description" content="Тут ви зможете ознайомитися з моїми роботами та дізнатися більше ABOUT ME">
     <meta name="google-site-verification" content="TnT-0QAOIdFvPJGnG89l51sZdqJwKf9Pef-M-_2CMAg">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://chornobaiwebdev.zzz.com.ua/">
     <meta property="og:title" content="Web-розробник Чорнобай Сергій">
-    <meta property="og:description" content="Тут ви зможете ознайомитися з моїми роботами та дізнатися більше про мене">
+    <meta property="og:description" content="Тут ви зможете ознайомитися з моїми роботами та дізнатися більше ABOUT ME">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://chornobaiwebdev.zzz.com.ua/">
     <meta property="twitter:title" content="Web-розробник Чорнобай Сергій">
     <meta property="twitter:description"
-        content="Тут ви зможете ознайомитися з моїми роботами та дізнатися більше про мене"><!-- Favicon  -->
+        content="Тут ви зможете ознайомитися з моїми роботами та дізнатися більше ABOUT ME"><!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
@@ -42,7 +42,7 @@
 
 <body>
     <section class="promo">
-        <div class="hamburger white"><span></span> <span class="long"></span> <span></span></div>
+        
         <div class="menu">
             <div class="menu__block">
                 <div class="menu__close"><svg width="29" height="30" viewBox="0 0 29 30" fill="none"
@@ -53,12 +53,12 @@
                     </svg></div>
                 <nav>
                     <ul class="menu__list">
-                        <li class="menu__link"><a href="#me">ПРО МЕНЕ</a></li>
-                        <li class="menu__link"><a href="#exp">МІЙ ДОСВІД</a></li>
-                        <li class="menu__link"><a href="#jobs">МОЇ НАВИЧКИ</a></li>
-                        <li class="menu__link"><a href="#skill">МОЇ РОБОТИ</a></li>
-                        <li class="menu__link"><a href="#pricelist">ПРАЙС ЛИСТ</a></li>
-                        <li class="menu__link"><a href="#feedback">КОНТАКТИ</a></li>
+                        <li class="menu__link"><a id="meMenu" href="#me">ABOUT ME</a></li>
+                        <li class="menu__link"><a id="expMenu" href="#exp">MY EXPERIENCE</a></li>
+                        <li class="menu__link"><a id="skillsMenu" href="#skill">MY SKILLS</a></li>
+                        <li class="menu__link"><a id="worksMenu" href="#jobs">MY WORKS</a></li>
+                        <li class="menu__link"><a id="pricelistMenu" href="#pricelist">PRICE LIST</a></li>
+                        <li class="menu__link"><a id="contactsMenu" href="#feedback">CONTACTS</a></li>
                     </ul>
                 </nav>
                 <div class="menu__social"><a href="https://github.com/SerhiiChornobai003"><svg width="30" height="30"
@@ -102,59 +102,68 @@
                         d="M-4.37114e-07 10C-1.95608e-07 15.525 4.36167 20 9.74107 20C14.0457 20 17.6962 17.135 18.9832 13.1625C19.0749 12.6625 18.7734 12.4792 18.5148 12.4792C18.2835 12.4792 17.6706 12.4875 16.8585 12.4917C17.4459 15.2733 15.5517 15.86 15.5517 15.86C14.4274 16.315 14.1267 16.9725 14.1267 16.9725C13.5228 17.8783 13.5352 16.9025 13.5352 16.9025C13.603 15.8983 14.5389 15.3708 14.5389 15.3708C16.0283 14.4792 15.5979 13.03 15.3493 12.4583C14.719 12.3683 14.2903 12.1108 14.0466 11.825C13.8029 14.0458 12.9652 16.38 9.23304 16.38C8.16988 16.38 7.30085 15.9925 6.61933 15.3508C6.37316 15.4633 5.3827 15.8008 4.04116 15.2633C4.04116 15.2633 3.78012 14.4258 5.03988 12.5133C4.82345 11.7133 4.71606 10.8633 4.7111 10.0133C4.71606 9.16333 4.82345 8.31333 5.03988 7.51333C3.78012 5.61333 4.04116 4.77583 4.04116 4.77583C5.3827 4.23833 6.37316 4.57583 6.61933 4.67583C7.30085 4.03833 8.16988 3.65083 9.23304 3.65083C12.9752 3.65083 13.7987 5.98833 14.0383 8.21333C14.3307 7.86333 14.928 7.53833 15.8408 7.53833C17.1444 7.53833 18.1918 7.55083 18.5082 7.55083C18.7635 7.55083 19.0683 7.37583 18.9708 6.86333C17.692 2.8625 14.0391 -6.1367e-07 9.74107 -4.25796e-07C4.36167 -1.90655e-07 -6.7851e-07 4.4775 -4.37114e-07 10Z" />
                 </svg></a>
             <div class="sidepanel__divider"></div>
-            <div class="sidepanel__text"><span class="sidepanel__social">СОЦІАЛЬНІ </span><span
-                    class="sidepanel__medias">МЕРЕЖІ</span></div>
+            <div class="sidepanel__text">
+                <span id="sidepanel_social" class="sidepanel__social">SOCIAL</span>
+                <span id="sidepanel__networks" class="sidepanel__medias">NETWORKS</span></div>
         </aside>
         <div class="container">
-            <div class="buttons top"><a class="button" href="#me">ПРО МЕНЕ</a> <a class="button" href="#exp">МІЙ
-                    ДОСВІД</a> <a class="button" href="#skill">МОЇ НАВИЧКИ</a> <a class="button" href="#jobs">МОЇ
-                    РОБОТИ</a> <a class="button" href="#pricelist">ПРАЙС ЛИСТ</a> <a class="button"
-                    href="#feedback">КОНТАКТИ</a></div>
-            <div class="title title__fz16 promo__subtitle">Я Сергій Чорнобай</div>
-            <h1 class="title title__fz48 promo__title">Я web-разробник з міста Радивилів</h1>
-            <div class="buttons" style="justify-content: start;"><a href="#exp"
-                    class="button button__portfolio title title__fz14">ПОРТФОЛІО</a> <a href="#me"
-                    class="promo__link title title__fz16" style="display: flex; align-items: center;">ПРО МЕНЕ</a></div>
+            <div class="hamburger white"><span></span> <span class="long"></span> <span></span></div>
+            <div class="buttons top">
+                <a id="button1" class="button" href="#me">ABOUT ME</a> 
+                <a id="button2" class="button" href="#exp">MY EXPERIENCE</a> 
+                <a id="button3" class="button" href="#skill">MY SKILLS</a> 
+                <a id="button4" class="button" href="#jobs">MY WORKS</a> 
+                <a id="button5" class="button" href="#pricelist">PRICE LIST</a> 
+                <a id="button6" class="button" href="#feedback">CONTACTS</a>
+                <div class="select">
+                    <select class="button selector" id="languageSelect">
+                        <option class="background" value="en">EN</option>
+                        <option class="background" value="ua">UA</option>
+                    </select>
+                </div>
+            </div>
+            <div id="Introduce1" class="title title__fz16 promo__subtitle">I'm Serhii Chornobai</div>
+            <h1 id="Introduce2" class="title title__fz48 promo__title">I'm a web-developer from Ukraine</h1>
+            <div class="buttons buttons__belowTitle" style="justify-content: start;">
+                <a id="aboutMeBelowPromoTitle" href="#exp" class="button button__portfolio title title__fz14">MY PORTFOLIO</a> 
+            <a id="aboutMeBelowPromoSubTitle" href="#me" class="promo__link title title__fz16" >ABOUT ME</a>
+        </div>
         </div>
     </section>
     <section id="me" class="about">
         <div class="container">
             <div style="display: flex; justify-content: center;">
-                <h2 class="title title_fz16 about__title black">Про мене</h2>
+                <h2 id="aboutMeSection2" class="title title_fz16 about__title black">ABOUT ME</h2>
             </div>
             <div class="about__wrapper">
                 <div class="about__descr">
-                    <div class="title title__fz36 about__subtitle">Я Сергій</div>
+                    <div id="myName" class="title title__fz36 about__subtitle">I'm Serhii</div>
                     <div class="about__divider"></div>
-                    <p class="about__text">Я Junior Web/Front-end developer. Мій шлях розпочався із пристрасті до
-                        веб-розробки та бажання робити вражаючі та функціональні інтерфейси для користувачів. У
-                        портфоліо ви знайдете мої проекти, де активно застосовуються HTML, CSS та JS щоб кінцевому
-                        користувачу було просто, швидко та зручно користуватись розробленим мною сайтом</p>
+                    <p id="juniorWeb" class="about__text">I'm a Junior Web/Front-end developer. My journey began with a passion for web development and a desire to create impressive and functional interfaces for users. In MY PORTFOLIO, you will find my projects where HTML, CSS, and JS are actively applied to ensure that the end user can easily, quickly, and conveniently navigate through the websites I have developed.</p>
                 </div>
                 <div class="about__skills">
                     <div id="web" class="about__skills-item">
                         <div class="about__skills-circle"><img src="icons/about_me/web_development.svg" alt="web-dev">
                         </div>
                         <div>
-                            <div class="title title__fz14 black">Web-розробка</div>
-                            <div class="about__skills-text">Володію знаннями у Web-розробці, котрі дозволяють мені
-                                задовольняти потреби клієнтів, та дають місце подальшому розвитку у цій сфері</div>
+                            <div class="title title__fz14 black">Web-development</div>
+                            <div id="webDevelopment" class="about__skills-text">I possess knowledge in web development, which allows me to meet the needs of clients and provides room for further growth in this field</div>
                         </div>
                     </div>
                     <div class="about__skills-item">
                         <div class="about__skills-circle"><img src="icons/about_me/web_development.svg" alt="web-dev">
                         </div>
                         <div>
-                            <div class="title title__fz14 black">.... Доповнюватиметься</div>
-                            <div class="about__skills-text">.... Доповнюватиметься</div>
+                            <div id="willBe1" class="title title__fz14 black">Will be supplemented</div>
+                            <div id="willBe2" class="about__skills-text">Will be supplemented</div>
                         </div>
                     </div>
                     <div class="about__skills-item">
                         <div class="about__skills-circle"><img src="icons/about_me/web_development.svg" alt="web-dev">
                         </div>
                         <div>
-                            <div class="title title__fz14 black">.... Доповнюватиметься</div>
-                            <div class="about__skills-text">.... Доповнюватиметься</div>
+                            <div id="willBe3" class="title title__fz14 black">Will be supplemented</div>
+                            <div id="willBe4" class="about__skills-text">Will be supplemented</div>
                         </div>
                     </div>
                 </div>
@@ -163,12 +172,12 @@
     </section>
     <section id="exp" class="experience">
         <div class="container">
-            <h2 class="title title__fz21 black experience__title">Досвід</h2>
-            <div class="title title__fz36 black experience__subtitle">Чим я корисний</div>
+            <h2 id="experience_title" class="title title__fz21 black experience__title">EXPERIENCE</h2>
+            <div id="whatICan" class="title title__fz36 black experience__subtitle">What I bring to the table</div>
             <div class="divider"></div>
             <div class="experience__wrapper">
                 <div class="experience__column">
-                    <h3 class="title title__fz20 black experience__column-title">Навчання</h3>
+                    <h3 id="educate" class="title title__fz20 black experience__column-title">Education</h3>
                     <ul>
                         <li>
                             <div class="experience__item">
@@ -176,11 +185,9 @@
                                     <div class="experience__item-icon"><img src="icons/experience/university.svg"
                                             alt="Udemy"></div>
                                     <div class="title title__fz14 black">Udemy</div>
-                                    <div class="experience__item-name">Курс Web-Developer від Івана Петриченко</div>
+                                    <div id="educate_item1" class="experience__item-name">Web Developer Course by Ivan Petrychenko</div>
                                 </div>
-                                <div class="experience__descr">Закінчивши навчання по курсу Web-Developer від Івана
-                                    Петриченко набув хороші знання, котрі дозволяють мені отримувати активний досвід в
-                                    верстці сайтів</div>
+                                <div id="educate_descr1" class="experience__descr">After completing the Web Developer course by Ivan Petrychenko, I gained valuable knowledge that allows me to gain hands-on experience in website development</div>
                             </div>
                         </li>
                         <li>
@@ -189,17 +196,16 @@
                                     <div class="experience__item-icon"><img src="icons/experience/university.svg"
                                             alt="Udemy"></div>
                                     <div class="title title__fz14 black">Udemy</div>
-                                    <div class="experience__item-name">Курси JS+React, TypeScript від Івана Петриченко
+                                    <div id="educate_item2" class="experience__item-name">JS+React, TypeScript Courses by Ivan Petrychenko
                                     </div>
                                 </div>
-                                <div class="experience__descr">По закінченню навчання по курсу Web-Developer, продовжив
-                                    навчання у Івана Петриченко, вивчаючи курс по JS+React а також TypeScript</div>
+                                <div id="educate_descr2" class="experience__descr">After completing the Web Developer course, I continued my studies with Ivan Petrychenko, taking courses on JS+React, as well as TypeScript</div>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="experience__column">
-                    <h3 class="title title__fz20 black experience__column-title">Досвід</h3>
+                    <h3 id="myExp" class="title title__fz20 black experience__column-title">Experience</h3>
                     <ul>
                         <li>
                             <div class="experience__item">
@@ -207,10 +213,9 @@
                                     <div class="experience__item-icon"><img src="icons/social/se1.svg" alt="Freelance">
                                     </div>
                                     <div class="title title__fz14 black">Freelance UpWork</div>
-                                    <div class="experience__item-name">( 2023 - зараз )</div>
+                                    <div id="experience_item1" class="experience__item-name">( 2023 - now )</div>
                                 </div>
-                                <div class="experience__descr">Працюватиму на фріланс-біржі Upwork, отримуючи на ній
-                                    дохід та безцінний досвід, котрий покращує мене, як Web-розробника</div>
+                                <div id="experience_descr1" class="experience__descr">I work on the UpWork freelance platform, earning income and gaining invaluable experience that enhances me as a web developer</div>
                             </div>
                         </li>
                     </ul>
@@ -220,47 +225,41 @@
     </section>
     <section id="skill" class="skills">
         <div class="container">
-            <h2 class="title title__fz21 black skills__title">Навички</h2>
-            <div class="title title__fz36 black skills__subtitle">Що я використовую в роботі</div>
+            <h2  id="skillsTitle" class="title title__fz21 black skills__title">SKILLS</h2>
+            <div id="skillsUsed" class="title title__fz36 black skills__subtitle">What I use in my work</div>
             <div class="divider"></div>
             <div class="grid-container">
                 <div class="grid-elem"><img src="icons/skills/html5.svg" alt="html5.svg">
                     <div class="grid__title title title__fz13 black">HTML5</div>
-                    <div class="grid__descr">Саме він створює каркас вашого сайту або програми, а п'ята версія дозволить
-                        мені створювати більш SEO-оптимізовану структуру вашого продукту</div>
+                    <div id="grid_descr1" class="grid__descr">It creates the framework for your website or application, and the fifth version allows me to build a more SEO-optimized structure for your product.</div>
                 </div>
                 <div class="grid-elem"><img src="icons/skills/css3.svg" alt="css3.svg">
                     <div class="grid__title title title__fz13 black">CSS3</div>
-                    <div class="grid__descr">Ця мова стилів дозволяє мені створювати абсолютно будь-який зовнішній
-                        вигляд вашого сайту або програми. Все обмежується лише вашою фантазією!</div>
+                    <div id="grid_descr2" class="grid__descr">This style language allows me to create virtually any appearance for your website or application. Everything is limited only by your imagination!</div>
                 </div>
                 <div class="grid-elem"><img src="icons/skills/js.svg" alt="js.svg">
-                    <div class="grid__title title title__fz13 black">Java Script</div>
-                    <div class="grid__descr">Ця мова програмування дозволяє оживити все, що завгодно: слайдери, вікна,
-                        підказки, вкладки, отримання даних від сервера та багато іншого</div>
+                    <div class="grid__title title title__fz13 black">JavaScript</div>
+                    <div id="grid_descr3" class="grid__descr">This programming language allows me to bring anything to life: sliders, pop-ups, tooltips, tabs, fetching data from the server, and much more.</div>
                 </div>
                 <div class="grid-elem"><img src="icons/skills/jquery.svg" alt="jquery.svg">
                     <div class="grid__title title title__fz13 black fourth">Jquery</div>
-                    <div class="grid__descr">Бібліотека Jquery дозволить прискорити розробку. Без необхідності
-                        інтегрувати в проект ми її не будемо, але звичка роботи з нею присутня</div>
+                    <div id="grid_descr4" class="grid__descr">The jQuery library speeds up development. We won't integrate it into the project unless necessary, but the habit of working with it is present.</div>
                 </div>
                 <div class="grid-elem"><img src="icons/skills/react.svg" alt="react.svg">
-                    <div class="grid__title title title__fz13 black">React (в процесі освоєння)</div>
-                    <div class="grid__descr">Ця бібліотека дозволяє створювати веб-додатки. Ми можемо створити
-                        максимально інтерактивний продукт саме під ваші цілі</div>
+                    <div id="grid_title5" class="grid__title title title__fz13 black">React (currently learning)</div>
+                    <div id="grid_descr5" class="grid__descr">This library allows the creation of web applications. We can create a highly interactive product tailored to your goals.</div>
                 </div>
                 <div class="grid-elem"><img src="icons/skills/TS.png" alt="TS.png">
-                    <div class="grid__title title title__fz13 black">TS (в процесі освоєння)</div>
-                    <div class="grid__descr">Ця мова програмування являє собою надмножину JavaScript. Вона дозволяє
-                        розробникам створювати більш надійні та масштабовані додатки.</div>
+                    <div id="grid_title6" class="grid__title title title__fz13 black">TypeScript (currently learning)</div>
+                    <div id="grid_descr6" class="grid__descr">This programming language is a superset of JavaScript. It enables developers to create more reliable and scalable applications.</div>
                 </div>
             </div>
         </div>
     </section>
     <section id="jobs" class="portfolio">
         <div class="container">
-            <h2 class="title title__fz21 black portfolio__title">Портфоліо</h2>
-            <div class="title title__fz36 black skills__subtitle">Мої роботи</div>
+            <h2 id="portfolio_title" class="title title__fz21 black portfolio__title">MY PORTFOLIO</h2>
+            <div id="portfolio_works" class="title title__fz36 black skills__subtitle">My Works</div>
             <div class="divider"></div>
             <div class="portfolio__wrapper"><a href="https://github.com/SerhiiChornobai003/Module_3-course"
                     class="portfolio__item"><img src="img/works/pulse.jpg" alt="pulse"> </a><a
@@ -272,23 +271,23 @@
     </section>
     <section id="pricelist" class="price">
         <div class="container">
-            <h2 class="title title__fz16 black price__title">Прайс лист</h2>
+            <h2 id="pricelist1" class="title title__fz16 black price__title">PRICE LIST</h2>
             <div class="divider"></div>
             <div class="price__wrapper">
                 <div class="price__item">
-                    <div class="price__type">Landing-page</div>
-                    <div class="price__count">Індивідуально.</div>
-                    <div class="price__descr">Односторінковий сайт для презентації послуг/товарів/...</div>
+                    <div id="price_type1" class="price__type">Landing-page</div>
+                    <div id="price_count1" class="price__count">Individually.</div>
+                    <div id="price_descr1" class="price__descr">Single-page website for presenting services/products/...</div>
                 </div>
                 <div class="price__item">
-                    <div class="price__type">Корпоративний сайт</div>
-                    <div class="price__count">Індивідуально.</div>
-                    <div class="price__descr">Сайт для вашого бізнесу чи компанії</div>
+                    <div id="price_type2" class="price__type">Corporate Website</div>
+                    <div id="price_count2" class="price__count">Individually</div>
+                    <div id="price_descr2" class="price__descr">A website for your business or company.</div>
                 </div>
                 <div class="price__item">
-                    <div class="price__type">Інтернет магазин</div>
-                    <div class="price__count">Індивідуально.</div>
-                    <div class="price__descr">Інструмент для ваших продаж в мережі</div>
+                    <div id="price_type3" class="price__type">Online Store</div>
+                    <div id="price_count3" class="price__count">Individually</div>
+                    <div id="price_descr3" class="price__descr">A tool for your online sales.</div>
                 </div>
             </div>
         </div>
@@ -297,26 +296,26 @@
         <div class="container">
             <div class="feedback__wrapper">
                 <div class="feedback__descr">
-                    <h2 class="title title__fz21 black portfolio__title">Контакти</h2>
-                    <div class="title title__fz36 feedback__subtitle black">Зв'яжіться зі мною</div>
+                    <h2 id="feedback_contacts" class="title title__fz21 black portfolio__title">CONTACTS</h2>
+                    <div id="contactMe" class="title title__fz36 feedback__subtitle black">Contact me</div>
                     <div class="divider"></div>
-                    <div class="title title_fz14 feedback__lowerSubtitle black">Будь-яким зручним для вас способом</div>
-                    <div class="feedback__social"><a href="https://t.me/sergkraken03" class="feedback__link"><img
-                                src="icons/social/telegram_black.svg" alt="telegram"> </a><a
-                            href="https://www.instagram.com/sergkraken2003/" class="feedback__link"><img
-                                src="icons/social/instagram_black.svg" alt="instagram"></a></div>
-                    <div class="title title__fz14 feedback__text">Або залиште ваші дані і я сам вам напишу</div>
+                    <div id="contactAnyWays" class="title title_fz14 feedback__lowerSubtitle black">Any ways that fits to you</div>
+                    <div class="feedback__social">
+                        <a href="https://t.me/sergkraken03" class="feedback__link"><img src="icons/social/telegram_black.svg" alt="telegram">
+                        </a>
+                        <a href="https://www.instagram.com/sergkraken2003/" class="feedback__link"><img src="icons/social/instagram_black.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <div id="leaveContacts" class="title title__fz14 feedback__text black">Or leave your contacts, and I will write to you myself</div>
                     <form action="#" id="fb" class="feedback__form">
                         <div class="feedback__input"><input required minlength="2" name="name" id="name" type="text">
-                            <label for="name">Ваше ім'я</label></div>
-                        <div class="feedback__input"><input required name="email" id="email" type="email"> <label
-                                for="email">Ваша пошта</label></div>
-                        <div class="feedback__textarea"><textarea required name="text" id="text"></textarea> <label
-                                for="text">Ваше повідомлення</label></div>
-                        <div class="buttons feedback__triggers"><button class="button black">Відправити
-                                повідомлення</button>
-                            <div class="feedback__policy"><input required type="checkbox"> <span>Я погоджуюсь з <a
-                                        href="/policies.html">політикою конфіденційності</a></span></div>
+                            <label id="labelName" for="name">Your name</label></div>
+                        <div class="feedback__input"><input required name="email" id="email" type="email"> 
+                            <label id="labelEmail" for="email">Your email</label></div>
+                        <div class="feedback__textarea"><textarea required name="text" id="text"></textarea> 
+                            <label id="labelMessage" for="text">Your message</label></div>
+                        <div class="buttons feedback__triggers"><button id="sendButton" class="button black">SEND MESSAGE</button>
+                            <div class="feedback__policy"><input required type="checkbox"> <span id="spanAgree">I agree</span> <span><a id="policyLink" href="/policies.html">to the privacy policy.</a></span></div>
                         </div>
                     </form>
                 </div>

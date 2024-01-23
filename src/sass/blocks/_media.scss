@@ -55,9 +55,8 @@
     .container { 
         max-width: 720px;
         .buttons {
-            
             .button { 
-                font-size: 12px;
+                font-size: 11px;
                 &__portfolio { 
                     font-size: 14px;
                 }     
@@ -119,6 +118,9 @@
     
 }
 @media (max-width: 768px) {
+    .promo__link { 
+        display: none;
+    }
     .hamburger  { 
         display: flex;
     }   
@@ -128,8 +130,17 @@
     .container { 
         max-width: 575px;
         padding: 0 10px 0 10px;
-        .top { 
+        .button { 
             display: none;
+        }
+        .select { 
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            .selector { 
+                display: flex;
+                margin-right: 0;
+            }
         }
         .about {
             &__subtitle { 
@@ -224,12 +235,11 @@
         padding: 0 10px;
         .promo { 
             &__title { 
-                font-size: 26px;
-                width: 300px;
+                font-size: 28px;
+                width: 310px;
             }
-            .buttons { 
-                justify-content: center;
-            }
+           
+            
         }
         .about {
             &__wrapper { 
@@ -302,7 +312,7 @@
         &__wrapper {
             padding: 0 52px 0 52px;
             display: grid;
-            grid-template-columns: minmax(320px, 570px);
+            grid-template-columns: minmax(315px, 570px);
             justify-content: center;
         }
         &__descr { 

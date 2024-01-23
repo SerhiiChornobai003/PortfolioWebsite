@@ -26,7 +26,8 @@
         @include before_circle;
     }
     &__text, &__social {
-        margin-top: 20px;     
+        margin-top: 20px;    
+        text-align: center; 
     }
     &__social { 
         display: flex;
